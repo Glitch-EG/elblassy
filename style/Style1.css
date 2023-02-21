@@ -10,8 +10,7 @@ body {
 ::selection{
 
 background-color: #00000000;
-color: #e7e7e7;
-
+color: none;
 }
 
 h2{
@@ -55,6 +54,7 @@ a {
 
 .list {
   position: fixed;
+  width: 100px;
   padding: 8px;
   border: none;
   border-radius: 50px;
@@ -82,7 +82,12 @@ background-color:#99ff84 ;
 .list:focus {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
+button{
 
+width: 100px;
+
+
+}
 .Slink1 {
   position: fixed;
   display: block;
@@ -234,16 +239,54 @@ padding-bottom: 10px;
 }
 
 
+.Me {
+  font-size: 18px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border: none;
+  background-color: #e6e6e6;
+  background-image: url(icon-C.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 30px;
+  left: 25px;
+  transition: 0.3s;
+  box-shadow: 0px 0px 10px 2px #1a85ff91;
+}
+
+.Me:active {
+  box-shadow: 0px 0px 12px 2px #0077ff;
+  background-color: #929292;
+}
+
+.Me:hover{
+
+background-color: #4894f85d;
+
+}
+
 /*slider*/
 .sl1{
   width: 270px;
   padding: 0px;
+  border-radius: 20px;
   }
   
   .slider{
   overflow:hidden ;
   width: 270px ;
+  height: 270px;
   margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: d black 2px;
+  border-radius: 20px;
+  padding: 0px;
+  box-shadow:0 0 20px #000000;
+background-color: #000;
   }
   
   .slider ul{
@@ -252,32 +295,31 @@ padding-bottom: 10px;
   width: 1890px ;
   position: relative;
   animation: sliding 25s ease-in-out infinite;
+  margin: 0px;
   }
   
   .slider ul li{
   padding: 0px;
   float: right;
   position: relative;
+  margin: 0px;
   }
   .slider ul:hover{
 
     animation-play-state: paused;
 
   }
-  li img{
 
-border-radius: 20px;
-  }
   @keyframes sliding
   {
   
-  0%{right: 0px ;}
-  15%{right:-270px ;}
-  30%{right:-540px ;}
-  45%{right:-810px;}
-  60%{right:-1080px ;}
-  75%{right:-1350px ;}
-  90%{right:-1620px ;}
+  0%  , 5%{right: 0px ;}
+  15% , 20%{right:-270px ;}
+  30% , 35%{right:-540px ;}
+  45% , 50% {right:-810px;}
+  60% , 65%{right:-1080px ;}
+  75% , 80% {right:-1350px ;}
+  90% , 95%{right:-1620px ;}
   }
 
   .pr{
